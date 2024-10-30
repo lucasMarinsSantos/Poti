@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/app/static/images/adaocp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(172, 149, 0);
+    background-color: rgba(132, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    padding-right: 70%;
+}
+
+.custom-text-border {
+    position: relative;
+}
+
+.custom-text-border::before {
+    content: "Desenvolvimento de Software";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.custom-title-border {
+    position: relative;
+}
+
+.custom-title-border::before {
+    content: "LUCAS MARINS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    z-index: -21;
+    filter: blur(2px);
+}
